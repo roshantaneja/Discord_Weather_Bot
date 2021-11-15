@@ -29,12 +29,14 @@ async def on_message(message):
     
     if message.content.startswith('$help'):
         await message.channel.send('type $weather {city}')
-        print("said hello to " + str(message.author))
+        print("said help to " + str(message.author))
     
     if message.content.startswith('$weather'):
         city = message.content.split(" ")[1]
         await message.channel.send(getweather(city))
-        print("said hello to " + str(message.author))
+        print("said weather to " + str(message.author))
+    
+    if message.content.
 
 client.run(token)
 
